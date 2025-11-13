@@ -1,0 +1,78 @@
+document.addEventListener('DOMContentLoaded', () => {
+    console.log("Portfolio loaded!");
+
+    // ==============================
+    // 1. TABS & FILTERS
+    // ==============================
+    const tabs = document.querySelectorAll('.tab-btn');
+    const cards = document.querySelectorAll('.project-card');
+
+    if(tabs.length > 0) {
+        tabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                tabs.forEach(btn => btn.classList.remove('active'));
+                tab.classList.add('active');
+                const targetCategory = tab.getAttribute('data-target');
+
+                cards.forEach(card => {
+                    const cardCategory = card.getAttribute('data-category');
+                    if (targetCategory === 'all' || cardCategory === targetCategory) {
+                        card.classList.remove('hidden');
+                        card.style.animation = 'none';
+                        card.offsetHeight; 
+                        card.style.animation = 'fadeIn 0.5s ease forwards';
+                    } else {
+                        card.classList.add('hidden');
+                    }
+                });
+            });
+        });
+    }
+
+    // ==============================
+    // 2. CURSOR LOGIC
+    // ==============================
+    const cursor = document.getElementById('cursor');
+    const projectImages = document.querySelectorAll('.image-container');
+
+    if(cursor) {
+        document.addEventListener('mousemove', (e) => {
+            cursor.style.left = e.clientX + 'px';
+            cursor.style.top = e.clientY + 'px';
+        });
+
+        projectImages.forEach(container => {
+            container.addEventListener('mouseenter', () => cursor.classList.add('active'));
+            container.addEventListener('mouseleave', () => cursor.classList.remove('active'));
+        });
+    }
+
+    // ==============================
+    // 3. FAQ & Education
+    // ==============================
+    const allDetails = document.querySelectorAll("details");
+
+    allDetails.forEach((targetDetail) => {
+        targetDetail.addEventListener("click", () => {
+            // Закриваємо всі інші, крім поточного
+            allDetails.forEach((detail) => {
+                if (detail !== targetDetail) {
+                    detail.removeAttribute("open");
+                }
+            });
+        });
+    });
+
+    // ==============================
+    // 4. BACK TO TOP BUTTON
+    // ==============================
+    const backToTopBtn = document.getElementById('backToTop');
+    if(backToTopBtn) {
+        backToTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    }
+});

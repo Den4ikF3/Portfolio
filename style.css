@@ -1,0 +1,184 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #111111;
+    color: #f1f1f1;
+    /* Сітка фону */
+    background-image: 
+        linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+    background-size: 20px 20px; 
+}
+
+.contact-btn {
+    border: 1px solid #444;
+    color: #f1f1f1;
+    transition: all 0.3s ease;
+}
+.contact-btn:hover {
+    background-color: #f1f1f1;
+    color: #111;
+}
+
+.project-card {
+    background-color: #1a1a1a;
+    border: 1px solid #333;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+.hero-title {
+    font-size: clamp(4rem, 15vw, 12rem); /* Адаптивний розмір шрифту */
+    font-weight: 900;
+    letter-spacing: -0.05em;
+    line-height: 1;
+    color: #e5e5e5;
+}
+
+.tab-btn {
+    padding: 10px 24px;
+    border-radius: 999px;
+    border: 1px solid #333;
+    background-color: transparent;
+    color: #888;
+    font-weight: 600;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.tab-btn:hover {
+    border-color: #666;
+    color: #fff;
+}
+
+.tab-btn.active {
+    background-color: #f1f1f1;
+    color: #111;
+    border-color: #f1f1f1;
+}
+
+.hidden {
+    display: none;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.project-card {
+    animation: fadeIn 0.5s ease forwards;
+}
+
+.tag {
+    display: inline-block;
+    padding: 6px 16px;
+    border: 1px solid #333;
+    border-radius: 999px;
+    font-size: 0.7rem;
+    font-weight: 700;
+    color: #888;
+    background-color: #000;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+/* === ЛОГІКА КУРСОРА "VIEW" === */
+#cursor {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 80px;
+    height: 80px;
+    background-color: #f1f1f1;
+    color: #000;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 800;
+    font-size: 14px;
+    pointer-events: none;
+    transform: translate(-50%, -50%) scale(0);
+    opacity: 0;
+    transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.2s ease;
+    z-index: 9999;
+    mix-blend-mode: exclusion;
+}
+
+#cursor.active {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+}
+
+.image-container {
+    cursor: none; 
+}
+
+
+/* === Styles for About Me Section === */
+.tech-tag {
+    display: inline-flex;
+    align-items: center;
+    padding: 6px 14px;
+    border: 1px solid #444;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #ccc;
+    background-color: rgba(255, 255, 255, 0.03);
+    transition: all 0.3s ease;
+    cursor: default;
+}
+
+.tech-tag:hover {
+    border-color: #fff;
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+details > summary {
+    list-style: none;
+}
+details > summary::-webkit-details-marker {
+    display: none;
+}
+
+details[open] summary ~ * {
+    animation: slideDown 0.3s ease-in-out;
+}
+
+@keyframes slideDown {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+
+/* === Стилі для Collaborate === */
+@keyframes spin-slow {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+.animate-spin-slow {
+    animation: spin-slow 10s linear infinite;
+}
+
+/* === Стилі для FAQ === */
+details > summary {
+    list-style: none;
+}
+details > summary::-webkit-details-marker {
+    display: none;
+}
+
+details[open] div {
+    animation: slideDown 0.3s ease-in-out;
+}
+
+footer {
+    background-color: #111;
+}

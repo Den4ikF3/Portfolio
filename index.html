@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTFOLIO.DEV - Denis Gamzin</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="antialiased">
+
+    <nav class="container mx-auto px-6 py-6 flex justify-between items-center">
+        <div class="text-xl font-bold tracking-wider">PORTFOLIO.DEV</div>
+        <div class="hidden md:block text-gray-400 font-medium">
+            <a href="mailto:gamzindenis600@gmail.com" class="hover:text-white transition-colors">gamzindenis600@gmail.com</a>
+        </div>
+        <div>
+            <a href="https://t.me/Den4ik3425" target="_blank" class="contact-btn font-medium py-2 px-5 rounded-full text-sm">
+                CONTACT NOW
+            </a>
+        </div>
+    </nav>
+
+    <header class="container mx-auto px-6 py-24 md:py-32 flex flex-col md:flex-row justify-between items-start">
+        <div class="w-full md:w-3/4">
+            <h1 class="hero-title">PORTFOLIO</h1>
+            <h1 class="hero-title mt-2">.DEV</h1>
+        </div>
+        <div class="w-full md:w-1/4 mt-12 md:mt-4 md:pl-8">
+            <h2 class="text-lg font-semibold text-gray-300 mb-3 tracking-widest">FRONTEND-DEVELOPER</h2>
+            <p class="text-base text-gray-400 leading-relaxed">
+                I love creating captivating and functional interfaces that evoke emotions and establish a connection between the brand and the user.
+            </p>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6 py-16">
+        
+        <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-5xl font-bold tracking-tight mb-4">Selected Works</h2>
+            <p class="text-gray-400">Explore my projects by category</p>
+        </div>
+
+        <div class="flex flex-wrap justify-center gap-4 mb-16">
+            <button class="tab-btn active" data-target="websites">Websites</button>
+            <button class="tab-btn" data-target="game-cards">Game Cards</button>
+            <button class="tab-btn" data-target="credit-cards">Credit Cards</button>
+            <button class="tab-btn" data-target="toggles">Toggles</button>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 project-grid">
+            
+            <a href="#" class="project-card" data-category="websites">
+                <div class="p-8 h-64 flex flex-col justify-between bg-zinc-900">
+                    <span class="text-purple-400 text-sm font-mono">WEBSITE #1</span>
+                    <h3 class="text-2xl font-bold">Creative Portfolio</h3>
+                </div>
+            </a>
+            <a href="#" class="project-card" data-category="websites">
+                <div class="p-8 h-64 flex flex-col justify-between bg-zinc-900">
+                    <span class="text-purple-400 text-sm font-mono">WEBSITE #2</span>
+                    <h3 class="text-2xl font-bold">E-Commerce Shop</h3>
+                </div>
+            </a>
+            <a href="#" class="project-card" data-category="websites">
+                <div class="p-8 h-64 flex flex-col justify-between bg-zinc-900">
+                    <span class="text-sky-400 text-sm font-mono">WEBSITE #3</span>
+                    <h3 class="text-2xl font-bold">Landing Page</h3>
+                </div>
+            </a>
+            <a href="#" class="project-card" data-category="websites">
+                <div class="p-8 h-64 flex flex-col justify-between bg-zinc-900">
+                    <span class="text-sky-400 text-sm font-mono">WEBSITE #4</span>
+                    <h3 class="text-2xl font-bold">Corporate Blog</h3>
+                </div>
+            </a>
+
+            <a href="#" class="project-card hidden" data-category="game-cards">
+                <div class="p-8 h-64 flex flex-col justify-between bg-green-900/20 border-green-900">
+                    <span class="text-green-400 text-sm font-mono">GAME UI</span>
+                    <h3 class="text-2xl font-bold">Character Card (Orc)</h3>
+                </div>
+            </a>
+            <a href="#" class="project-card hidden" data-category="game-cards">
+                <div class="p-8 h-64 flex flex-col justify-between bg-green-900/20 border-green-900">
+                    <span class="text-green-400 text-sm font-mono">GAME UI</span>
+                    <h3 class="text-2xl font-bold">Weapon Stats</h3>
+                </div>
+            </a>
+            <a href="#" class="project-card hidden" data-category="game-cards">
+                <div class="p-8 h-64 flex flex-col justify-between bg-green-900/20 border-green-900">
+                    <span class="text-green-400 text-sm font-mono">GAME UI</span>
+                    <h3 class="text-2xl font-bold">Inventory Slot</h3>
+                </div>
+            </a>
+            <a href="#" class="project-card hidden" data-category="game-cards">
+                <div class="p-8 h-64 flex flex-col justify-between bg-green-900/20 border-green-900">
+                    <span class="text-green-400 text-sm font-mono">GAME UI</span>
+                    <h3 class="text-2xl font-bold">Map Interface</h3>
+                </div>
+            </a>
+            <a href="#" class="project-card hidden" data-category="game-cards">
+                <div class="p-8 h-64 flex flex-col justify-between bg-green-900/20 border-green-900">
+                    <span class="text-green-400 text-sm font-mono">GAME UI</span>
+                    <h3 class="text-2xl font-bold">Skill Tree</h3>
+                </div>
+            </a>
+
+            <a href="#" class="project-card hidden" data-category="credit-cards">
+                <div class="p-8 h-64 flex flex-col justify-between bg-yellow-900/20 border-yellow-900">
+                    <span class="text-yellow-400 text-sm font-mono">FINTECH</span>
+                    <h3 class="text-2xl font-bold">Glassmorphism Card</h3>
+                </div>
+            </a>
+            <a href="#" class="project-card hidden" data-category="credit-cards">
+                <div class="p-8 h-64 flex flex-col justify-between bg-yellow-900/20 border-yellow-900">
+                    <span class="text-yellow-400 text-sm font-mono">3D ASSET</span>
+                    <h3 class="text-2xl font-bold">Rotating 3D Card</h3>
+                </div>
+            </a>
+
+            <a href="#" class="project-card hidden" data-category="toggles">
+                <div class="p-8 h-64 flex flex-col justify-between bg-red-900/20 border-red-900">
+                    <span class="text-red-400 text-sm font-mono">INTERACTIVE</span>
+                    <h3 class="text-2xl font-bold">Neon Toggle</h3>
+                </div>
+            </a>
+            <a href="#" class="project-card hidden" data-category="toggles">
+                <div class="p-8 h-64 flex flex-col justify-between bg-red-900/20 border-red-900">
+                    <span class="text-red-400 text-sm font-mono">INTERACTIVE</span>
+                    <h3 class="text-2xl font-bold">iOS Style Switch</h3>
+                </div>
+            </a>
+            <a href="#" class="project-card hidden" data-category="toggles">
+                <div class="p-8 h-64 flex flex-col justify-between bg-red-900/20 border-red-900">
+                    <span class="text-red-400 text-sm font-mono">INTERACTIVE</span>
+                    <h3 class="text-2xl font-bold">Dark Mode Slider</h3>
+                </div>
+            </a>
+            <a href="#" class="project-card hidden" data-category="toggles">
+                <div class="p-8 h-64 flex flex-col justify-between bg-red-900/20 border-red-900">
+                    <span class="text-red-400 text-sm font-mono">INTERACTIVE</span>
+                    <h3 class="text-2xl font-bold">Liquid Toggle</h3>
+                </div>
+            </a>
+
+        </div>
+
+        <section id="featured-works" class="mt-40 mb-20">
+            
+            <div class="flex flex-col md:flex-row justify-between items-end mb-16 border-b border-zinc-800 pb-8">
+                <div>
+                    <h2 class="text-4xl md:text-7xl font-black uppercase tracking-tighter mb-4 text-white">Best Works</h2>
+                    <p class="text-gray-400 max-w-md text-lg">A curated selection of my finest digital creations.</p>
+                </div>
+                <div class="hidden md:block text-2xl font-mono text-zinc-600 mb-2">// 07 ITEMS</div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <a href="#" class="project-card-featured group md:col-span-2 lg:col-span-2">
+                    <div class="image-container bg-zinc-800 aspect-video rounded-3xl overflow-hidden relative mb-4">
+                        <div class="w-full h-full bg-gradient-to-br from-zinc-700 to-black group-hover:scale-105 transition-transform duration-700 ease-out"></div>
+                        <div class="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors"></div>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-2xl font-bold text-white uppercase">Agencify Main</h3>
+                        <span class="tag">WEBSITE</span>
+                    </div>
+                </a>
+
+                <a href="#" class="project-card-featured group">
+                    <div class="image-container bg-zinc-800 aspect-square rounded-3xl overflow-hidden relative mb-4">
+                        <div class="w-full h-full bg-zinc-900 group-hover:scale-105 transition-transform duration-700"></div>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-xl font-bold text-white uppercase">Construct Firm</h3>
+                        <span class="tag">WEBSITE</span>
+                    </div>
+                </a>
+
+                <a href="#" class="project-card-featured group">
+                    <div class="image-container bg-zinc-800 aspect-square rounded-3xl overflow-hidden relative mb-4">
+                        <div class="w-full h-full bg-zinc-900 group-hover:scale-105 transition-transform duration-700"></div>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-xl font-bold text-white uppercase">Ecommerce Shop</h3>
+                        <span class="tag">WEBSITE</span>
+                    </div>
+                </a>
+
+                <a href="#" class="project-card-featured group">
+                    <div class="image-container bg-zinc-800 aspect-square rounded-3xl overflow-hidden relative mb-4">
+                        <div class="w-full h-full bg-zinc-900 group-hover:scale-105 transition-transform duration-700"></div>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-xl font-bold text-white uppercase">Personal Blog</h3>
+                        <span class="tag">WEBSITE</span>
+                    </div>
+                </a>
+
+                <a href="#" class="project-card-featured group">
+                    <div class="image-container bg-zinc-800 aspect-square rounded-3xl overflow-hidden relative mb-4">
+                        <div class="w-full h-full bg-zinc-900 group-hover:scale-105 transition-transform duration-700"></div>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-xl font-bold text-white uppercase">Landing Page</h3>
+                        <span class="tag">WEBSITE</span>
+                    </div>
+                </a>
+
+                <a href="#" class="project-card-featured group md:col-span-2 lg:col-span-1">
+                     <div class="image-container bg-zinc-800 aspect-[4/3] rounded-3xl overflow-hidden relative mb-4 flex items-center justify-center">
+                        <div class="w-40 h-24 bg-gradient-to-r from-orange-500 to-yellow-500 rounded-xl shadow-2xl group-hover:-rotate-6 transition-transform duration-500"></div>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-xl font-bold text-white uppercase">3D Card</h3>
+                        <span class="tag">CREDIT CARD</span>
+                    </div>
+                </a>
+
+                <a href="#" class="project-card-featured group md:col-span-1 lg:col-span-2">
+                     <div class="image-container bg-zinc-800 aspect-[2/1] rounded-3xl overflow-hidden relative mb-4 flex items-center justify-center">
+                        <div class="w-32 h-14 bg-black rounded-full p-2 border border-zinc-700 flex items-center">
+                            <div class="w-10 h-10 bg-white rounded-full shadow-lg group-hover:translate-x-16 transition-transform duration-300 ease-in-out"></div>
+                        </div>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-xl font-bold text-white uppercase">Interactive Switch</h3>
+                        <span class="tag">TOGGLE</span>
+                    </div>
+                </a>
+
+            </div>
+        </section>
+
+        <section id="about" class="container mx-auto px-6 py-24 border-t border-zinc-800">        
+            <div class="flex justify-between items-center text-gray-500 text-sm font-mono mb-12">
+                <span>// WHO AM I</span>
+                <span>// 2025</span>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 relative mb-24">
+                
+                <div class="z-10 relative">
+                    <h2 class="text-5xl md:text-7xl font-black uppercase tracking-tighter leading-none mb-8 text-white">
+                        MYKOLAIV,<br>
+                        UKRAINE
+                    </h2>
+
+                    <div class="flex flex-wrap gap-3 mb-12 max-w-md">
+                        <span class="tech-tag">HTML/CSS</span>
+                        <span class="tech-tag">JS</span>
+                        <span class="tech-tag">React.js</span>
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">PostgreSQL</span>
+                        <span class="tech-tag">Figma</span>
+                        <span class="tech-tag">Framer</span>
+                        <span class="tech-tag">GitHub</span>
+                    </div>
+
+                    <div class="lg:hidden mb-8">
+                        <h1 class="text-6xl font-black text-white tracking-tighter">FRONTEND<br>DEV</h1>
+                    </div>
+
+                    <p class="text-gray-400 text-lg leading-relaxed max-w-md mb-8">
+                        I specialize in Front-End Development, building scalable and interactive web applications. 
+                        With a strong command of modern frameworks and backend integration, 
+                        I ensure your digital product is fast, responsive, and user-friendly.
+                    </p>
+
+                    <a href="#" class="inline-block border border-white text-white px-8 py-3 rounded-full text-sm font-bold tracking-widest hover:bg-white hover:text-black transition-all duration-300">
+                        DOWNLOAD CV/RESUME
+                    </a>
+                </div>
+
+                <div class="relative h-[400px] lg:h-auto w-full flex items-center justify-center">
+                    
+                    <div class="absolute inset-0 bg-gradient-to-b from-zinc-800 to-zinc-950 rounded-2xl border border-zinc-800 overflow-hidden">
+                        <div class="absolute inset-0 opacity-20" 
+                            style="background-image: radial-gradient(#fff 1px, transparent 1px); background-size: 20px 20px;">
+                        </div>
+                        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-purple-600 blur-[100px] opacity-40 rounded-full"></div>
+                    </div>
+
+                    <h1 class="hidden lg:block absolute -left-20 top-1/2 -translate-y-1/2 text-[8rem] leading-[0.85] font-black text-white tracking-tighter mix-blend-difference pointer-events-none">
+                        FRONTEND<br>DEV
+                    </h1>
+                </div>
+            </div>
+
+            <div class="mt-24">
+                <h3 class="text-xl font-bold mb-8 border-b border-zinc-800 pb-4">AWARDS & EDUCATION</h3>
+
+                <details class="group border-b border-zinc-800">
+                    <summary class="flex justify-between items-center p-6 cursor-pointer hover:bg-zinc-900 transition-colors list-none">
+                        <span class="text-lg md:text-2xl font-bold text-gray-300 group-hover:text-white">University Degree</span>
+                        <div class="flex items-center gap-4">
+                            <span class="text-gray-500 text-sm hidden md:block">Computer Science</span>
+                            <span class="text-2xl group-open:rotate-45 transition-transform duration-300 text-gray-500">+</span>
+                        </div>
+                    </summary>
+                    <div class="p-6 pt-0 text-gray-400 max-w-3xl">
+                        <p>Master's degree in Computer Science. Focused on algorithms, data structures, and software engineering principles.</p>
+                    </div>
+                </details>
+
+                <details class="group border-b border-zinc-800">
+                    <summary class="flex justify-between items-center p-6 cursor-pointer hover:bg-zinc-900 transition-colors list-none">
+                        <span class="text-lg md:text-2xl font-bold text-gray-300 group-hover:text-white">IT Academy Course</span>
+                        <div class="flex items-center gap-4">
+                            <span class="text-gray-500 text-sm hidden md:block">Frontend Advanced</span>
+                            <span class="text-2xl group-open:rotate-45 transition-transform duration-300 text-gray-500">+</span>
+                        </div>
+                    </summary>
+                    <div class="p-6 pt-0 text-gray-400 max-w-3xl">
+                        <p>Intensive course covering React, Redux, and modern CSS architecture. Completed with honors.</p>
+                    </div>
+                </details>
+
+                <details class="group border-b border-zinc-800">
+                    <summary class="flex justify-between items-center p-6 cursor-pointer hover:bg-zinc-900 transition-colors list-none">
+                        <span class="text-lg md:text-2xl font-bold text-gray-300 group-hover:text-white">Hackathon Winner</span>
+                        <div class="flex items-center gap-4">
+                            <span class="text-gray-500 text-sm hidden md:block">1st Place</span>
+                            <span class="text-2xl group-open:rotate-45 transition-transform duration-300 text-gray-500">+</span>
+                        </div>
+                    </summary>
+                    <div class="p-6 pt-0 text-gray-400 max-w-3xl">
+                        <p>Won first place in the regional web development hackathon by creating an innovative eco-friendly app.</p>
+                    </div>
+                </details>
+
+                <details class="group border-b border-zinc-800">
+                    <summary class="flex justify-between items-center p-6 cursor-pointer hover:bg-zinc-900 transition-colors list-none">
+                        <span class="text-lg md:text-2xl font-bold text-gray-300 group-hover:text-white">Framer Certification</span>
+                        <div class="flex items-center gap-4">
+                            <span class="text-gray-500 text-sm hidden md:block">Official Expert</span>
+                            <span class="text-2xl group-open:rotate-45 transition-transform duration-300 text-gray-500">+</span>
+                        </div>
+                    </summary>
+                    <div class="p-6 pt-0 text-gray-400 max-w-3xl">
+                        <p>Certified Framer expert capable of building complex animations and no-code websites.</p>
+                    </div>
+                </details>
+
+                <details class="group border-b border-zinc-800">
+                    <summary class="flex justify-between items-center p-6 cursor-pointer hover:bg-zinc-900 transition-colors list-none">
+                        <span class="text-lg md:text-2xl font-bold text-gray-300 group-hover:text-white">English C1</span>
+                        <div class="flex items-center gap-4">
+                            <span class="text-gray-500 text-sm hidden md:block">Language</span>
+                            <span class="text-2xl group-open:rotate-45 transition-transform duration-300 text-gray-500">+</span>
+                        </div>
+                    </summary>
+                    <div class="p-6 pt-0 text-gray-400 max-w-3xl">
+                        <p>Professional working proficiency in English, allowing seamless communication with international clients.</p>
+                    </div>
+                </details>
+            </div>
+        </section>
+
+        <div id="cursor">VIEW</div>
+
+        <section id="faq" class="container mx-auto px-6 py-24 border-t border-zinc-800">
+        <div class="flex justify-between items-end mb-16">
+            <h2 class="text-sm font-mono text-gray-500">// FAQ</h2>
+            <div class="hidden md:block text-sm font-mono text-gray-500">// QUESTIONS</div>
+        </div>
+
+        <div class="max-w-4xl mx-auto">
+            <details class="group border-b border-zinc-800">
+                <summary class="flex items-center py-8 cursor-pointer list-none">
+                    <span class="text-gray-500 text-sm font-mono mr-8 w-4">1</span>
+                    <span class="text-xl md:text-2xl font-bold text-white flex-1 group-hover:text-gray-300 transition-colors">WHAT DO I NEED TO GET STARTED?</span>
+                    <span class="text-2xl text-gray-500 font-light group-open:rotate-45 transition-transform duration-300 ml-4">+</span>
+                </summary>
+                <div class="pb-8 pl-12 md:pl-14 text-gray-400 leading-relaxed">
+                    <p>To get started, simply share your project details and goals with us. We'll guide you through the process and provide the tools and support needed to bring your vision to life.</p>
+                </div>
+            </details>
+
+            <details class="group border-b border-zinc-800">
+                <summary class="flex items-center py-8 cursor-pointer list-none">
+                    <span class="text-gray-500 text-sm font-mono mr-8 w-4">2</span>
+                    <span class="text-xl md:text-2xl font-bold text-white flex-1 group-hover:text-gray-300 transition-colors">WHAT KIND OF CUSTOMIZATION IS AVAILABLE?</span>
+                    <span class="text-2xl text-gray-500 font-light group-open:rotate-45 transition-transform duration-300 ml-4">+</span>
+                </summary>
+                <div class="pb-8 pl-12 md:pl-14 text-gray-400 leading-relaxed">
+                    <p>We offer full customization including layout changes, color schemes, typography, and functional integrations to match your brand identity perfectly.</p>
+                </div>
+            </details>
+
+            <details class="group border-b border-zinc-800">
+                <summary class="flex items-center py-8 cursor-pointer list-none">
+                    <span class="text-gray-500 text-sm font-mono mr-8 w-4">3</span>
+                    <span class="text-xl md:text-2xl font-bold text-white flex-1 group-hover:text-gray-300 transition-colors">HOW EASY IS IT TO EDIT FOR BEGINNERS?</span>
+                    <span class="text-2xl text-gray-500 font-light group-open:rotate-45 transition-transform duration-300 ml-4">+</span>
+                </summary>
+                <div class="pb-8 pl-12 md:pl-14 text-gray-400 leading-relaxed">
+                    <p>Very easy! We build with maintainability in mind. You will receive documentation and clean code, or a CMS setup if requested.</p>
+                </div>
+            </details>
+
+            <details class="group border-b border-zinc-800">
+                <summary class="flex items-center py-8 cursor-pointer list-none">
+                    <span class="text-gray-500 text-sm font-mono mr-8 w-4">4</span>
+                    <span class="text-xl md:text-2xl font-bold text-white flex-1 group-hover:text-gray-300 transition-colors">DO I NEED TO KNOW HOW TO CODE?</span>
+                    <span class="text-2xl text-gray-500 font-light group-open:rotate-45 transition-transform duration-300 ml-4">+</span>
+                </summary>
+                <div class="pb-8 pl-12 md:pl-14 text-gray-400 leading-relaxed">
+                    <p>No, you don't. If we work on a CMS (like Framer or WordPress), you can edit content visually. For custom code, we offer support packages.</p>
+                </div>
+            </details>
+
+            <details class="group border-b border-zinc-800">
+                <summary class="flex items-center py-8 cursor-pointer list-none">
+                    <span class="text-gray-500 text-sm font-mono mr-8 w-4">5</span>
+                    <span class="text-xl md:text-2xl font-bold text-white flex-1 group-hover:text-gray-300 transition-colors">WHAT WILL I GET AFTER PURCHASING?</span>
+                    <span class="text-2xl text-gray-500 font-light group-open:rotate-45 transition-transform duration-300 ml-4">+</span>
+                </summary>
+                <div class="pb-8 pl-12 md:pl-14 text-gray-400 leading-relaxed">
+                    <p>You will receive all source files, access to the repository, documentation, and a 30-day support period for any bugs or questions.</p>
+                </div>
+            </details>
+        </div>
+
+        <div class="text-center mt-12">
+            <p class="text-gray-500">Can't find the answer for your question? <a href="mailto:gamzindenis600@gmail.com" class="text-white underline underline-offset-4 hover:text-gray-300">Contact me</a></p>
+        </div>
+    </section>
+
+    <section id="collaborate" class="py-32 relative overflow-hidden">
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-purple-900/20 blur-[120px] rounded-full pointer-events-none"></div>
+
+        <div class="container mx-auto px-6 text-center relative z-10">
+            <div class="mb-8 flex justify-center">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5" class="animate-spin-slow">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <path d="M2 12h20"></path>
+                    <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                </svg>
+            </div>
+
+            <h2 class="text-5xl md:text-8xl font-black uppercase tracking-tighter text-white mb-6 leading-none">
+                READY TO<br>COLLABORATE?
+            </h2>
+            
+            <p class="text-gray-400 text-lg mb-10">
+                Have a project in mind?<br>
+                Let’s create something extraordinary together.
+            </p>
+
+            <a href="https://t.me/Den4ik3425" target="_blank" class="contact-btn inline-block py-4 px-10 rounded-full text-sm font-bold tracking-widest bg-white text-black hover:bg-gray-200 transition-transform hover:scale-105">
+                CONTACT NOW
+            </a>
+        </div>
+    </section>
+
+    <footer class="container mx-auto px-6 py-12 border-t border-zinc-800 flex flex-col md:flex-row justify-between items-center gap-6">
+        
+        <div class="text-white font-bold tracking-wider text-sm">
+            &copy; 2025 PORTFOLIO.DEV
+        </div>
+
+        <div class="flex gap-8 text-sm font-bold tracking-wider">
+            <a href="https://t.me/Den4ik3425" target="_blank" class="text-gray-500 hover:text-white transition-colors">TELEGRAM</a>
+            <a href="#" target="_blank" class="text-gray-500 hover:text-white transition-colors">INSTAGRAM</a>
+            <a href="#" target="_blank" class="text-gray-500 hover:text-white transition-colors">LINKEDIN</a>
+            <a href="#" target="_blank" class="text-gray-500 hover:text-white transition-colors">GITHUB</a>
+        </div>
+
+        <button id="backToTop" class="text-white font-bold tracking-wider text-sm hover:text-gray-300 transition-colors">
+            BACK TO TOP
+        </button>
+
+    </footer>
+
+    </main>
+    
+    <script src="script.js"></script>
+</body>
+</html>
