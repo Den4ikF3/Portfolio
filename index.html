@@ -8,7 +8,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>    
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="style.css">
@@ -18,7 +18,8 @@
     <nav class="container mx-auto px-6 py-6 flex justify-between items-center">
         <div class="text-xl font-bold tracking-wider">PORTFOLIO.DEV</div>
         <div class="hidden md:block text-gray-400 font-medium">
-            <a href="mailto:gamzindenis600@gmail.com" class="hover:text-white transition-colors">gamzindenis600@gmail.com</a>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=gamzindenis600@gmail.com" target="_blank" 
+            rel="noopener noreferrer" class="hover:text-white transition-colors">gamzindenis600@gmail.com</a>
         </div>
         <div>
             <a href="https://t.me/Den4ik3425" target="_blank" class="contact-btn font-medium py-2 px-5 rounded-full text-sm">
@@ -27,12 +28,12 @@
         </div>
     </nav>
 
-    <header class="container mx-auto px-6 py-24 md:py-32 flex flex-col md:flex-row justify-between items-start">
-        <div class="w-full md:w-3/4">
+    <header class="container mx-auto px-6 py-24 md:py-32 flex flex-wrap justify-between items-start gap-10">
+        <div class="flex-1 min-w-[75%]">
             <h1 class="hero-title">PORTFOLIO</h1>
             <h1 class="hero-title mt-2">.DEV</h1>
         </div>
-        <div class="w-full md:w-1/4 mt-12 md:mt-4 md:pl-8">
+        <div class="w-full md:w-72 mt-12 md:mt-4 flex-shrink-0">
             <h2 class="text-lg font-semibold text-gray-300 mb-3 tracking-widest">FRONTEND-DEVELOPER</h2>
             <p class="text-base text-gray-400 leading-relaxed">
                 I love creating captivating and functional interfaces that evoke emotions and establish a connection between the brand and the user.
@@ -56,97 +57,213 @@
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8 project-grid">
             
-            <a href="#" class="project-card" data-category="websites">
-                <div class="p-8 h-64 flex flex-col justify-between bg-zinc-900">
-                    <span class="text-purple-400 text-sm font-mono">WEBSITE #1</span>
-                    <h3 class="text-2xl font-bold">Creative Portfolio</h3>
-                </div>
-            </a>
-            <a href="#" class="project-card" data-category="websites">
-                <div class="p-8 h-64 flex flex-col justify-between bg-zinc-900">
-                    <span class="text-purple-400 text-sm font-mono">WEBSITE #2</span>
-                    <h3 class="text-2xl font-bold">E-Commerce Shop</h3>
-                </div>
-            </a>
-            <a href="#" class="project-card" data-category="websites">
-                <div class="p-8 h-64 flex flex-col justify-between bg-zinc-900">
-                    <span class="text-sky-400 text-sm font-mono">WEBSITE #3</span>
-                    <h3 class="text-2xl font-bold">Landing Page</h3>
-                </div>
-            </a>
-            <a href="#" class="project-card" data-category="websites">
-                <div class="p-8 h-64 flex flex-col justify-between bg-zinc-900">
-                    <span class="text-sky-400 text-sm font-mono">WEBSITE #4</span>
-                    <h3 class="text-2xl font-bold">Corporate Blog</h3>
+            <a href="https://den4ikf3.github.io/WebsiteDetailingCenter/" target="_blank" rel="noopener" 
+            class="project-card group !border-purple-500/50 hover:!border-purple-400 hover:shadow-[0_0_30px_rgba(94,94,94,1)] transition-all duration-500" 
+            data-category="websites">
+                <div class="relative overflow-hidden p-8 h-[400px] bg-zinc-900">
+                    <img src="images/DetailingCenter.png" alt="Detailing Center" 
+                         class="absolute inset-0 w-full h-full object-cover opacity-60 transition-transform duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent"></div>
+                    <div class="relative z-10 h-full flex flex-col justify-between">
+                        <span class="text-purple-400 text-sm font-mono drop-shadow-[0_0_5px_rgba(94,94,94,1)]">WEBSITE #1</span>
+                        <h3 class="text-2xl font-bold text-white">Detailing Center</h3>
+                    </div>
                 </div>
             </a>
 
-            <a href="#" class="project-card hidden" data-category="game-cards">
-                <div class="p-8 h-64 flex flex-col justify-between bg-green-900/20 border-green-900">
-                    <span class="text-green-400 text-sm font-mono">GAME UI</span>
-                    <h3 class="text-2xl font-bold">Character Card (Orc)</h3>
-                </div>
-            </a>
-            <a href="#" class="project-card hidden" data-category="game-cards">
-                <div class="p-8 h-64 flex flex-col justify-between bg-green-900/20 border-green-900">
-                    <span class="text-green-400 text-sm font-mono">GAME UI</span>
-                    <h3 class="text-2xl font-bold">Weapon Stats</h3>
-                </div>
-            </a>
-            <a href="#" class="project-card hidden" data-category="game-cards">
-                <div class="p-8 h-64 flex flex-col justify-between bg-green-900/20 border-green-900">
-                    <span class="text-green-400 text-sm font-mono">GAME UI</span>
-                    <h3 class="text-2xl font-bold">Inventory Slot</h3>
-                </div>
-            </a>
-            <a href="#" class="project-card hidden" data-category="game-cards">
-                <div class="p-8 h-64 flex flex-col justify-between bg-green-900/20 border-green-900">
-                    <span class="text-green-400 text-sm font-mono">GAME UI</span>
-                    <h3 class="text-2xl font-bold">Map Interface</h3>
-                </div>
-            </a>
-            <a href="#" class="project-card hidden" data-category="game-cards">
-                <div class="p-8 h-64 flex flex-col justify-between bg-green-900/20 border-green-900">
-                    <span class="text-green-400 text-sm font-mono">GAME UI</span>
-                    <h3 class="text-2xl font-bold">Skill Tree</h3>
+            <a href="https://den4ikf3.github.io/WebsiteDodge/" target="_blank" rel="noopener" 
+            class="project-card group !border-purple-500/50 hover:!border-purple-400 hover:shadow-[0_0_30px_rgba(94,94,94,1)] transition-all duration-500" 
+            data-category="websites">
+                <div class="relative overflow-hidden p-8 h-[400px] bg-zinc-900">
+                    <img src="images/DodgeLandingPage.png" alt="Dodge Landing Page" 
+                         class="absolute inset-0 w-full h-full object-cover opacity-60 transition-transform duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent"></div>
+                    <div class="relative z-10 h-full flex flex-col justify-between">
+                        <span class="text-purple-400 text-sm font-mono drop-shadow-[0_0_5px_rgba(94,94,94,1)]">WEBSITE #2</span>
+                        <h3 class="text-2xl font-bold text-white">Dodge Landing Page</h3>
+                    </div>
                 </div>
             </a>
 
-            <a href="#" class="project-card hidden" data-category="credit-cards">
-                <div class="p-8 h-64 flex flex-col justify-between bg-yellow-900/20 border-yellow-900">
-                    <span class="text-yellow-400 text-sm font-mono">FINTECH</span>
-                    <h3 class="text-2xl font-bold">Glassmorphism Card</h3>
-                </div>
-            </a>
-            <a href="#" class="project-card hidden" data-category="credit-cards">
-                <div class="p-8 h-64 flex flex-col justify-between bg-yellow-900/20 border-yellow-900">
-                    <span class="text-yellow-400 text-sm font-mono">3D ASSET</span>
-                    <h3 class="text-2xl font-bold">Rotating 3D Card</h3>
+            <a href="https://den4ikf3.github.io/WebsiteMarianaTrench/" target="_blank" rel="noopener"
+            class="project-card group !border-sky-500/50 hover:!border-sky-400 hover:shadow-[0_0_30px_rgba(94,94,94,1)] transition-all duration-500" 
+            data-category="websites">
+                <div class="relative overflow-hidden p-8 h-[400px] bg-zinc-900">
+                    <img src="images/MarianaTrench.png" alt="Mariana Trench" 
+                         class="absolute inset-0 w-full h-full object-cover opacity-60 transition-transform duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent"></div>
+                    <div class="relative z-10 h-full flex flex-col justify-between">
+                        <span class="text-sky-400 text-sm font-mono drop-shadow-[0_0_5px_rgba(94,94,94,1)]">WEBSITE #3</span>
+                        <h3 class="text-2xl font-bold text-white">Mariana Trench</h3>
+                    </div>
                 </div>
             </a>
 
-            <a href="#" class="project-card hidden" data-category="toggles">
-                <div class="p-8 h-64 flex flex-col justify-between bg-red-900/20 border-red-900">
-                    <span class="text-red-400 text-sm font-mono">INTERACTIVE</span>
-                    <h3 class="text-2xl font-bold">Neon Toggle</h3>
+            <a href="https://den4ikf3.github.io/WebsiteHoverImage/" target="_blank" rel="noopener"
+            class="project-card group !border-sky-500/50 hover:!border-sky-400 hover:shadow-[0_0_30px_rgba(94,94,94,1)] transition-all duration-500" 
+            data-category="websites">
+                <div class="relative overflow-hidden p-8 h-[400px] bg-zinc-900">
+                    <img src="images/HoverImage.png" alt="Hover Image" 
+                         class="absolute inset-0 w-full h-full object-cover opacity-60 transition-transform duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent"></div>
+                    <div class="relative z-10 h-full flex flex-col justify-between">
+                        <span class="text-sky-400 text-sm font-mono drop-shadow-[0_0_5px_rgba(94,94,94,1)]">WEBSITE #4</span>
+                        <h3 class="text-2xl font-bold text-white">Hover Image</h3>
+                    </div>
                 </div>
             </a>
-            <a href="#" class="project-card hidden" data-category="toggles">
-                <div class="p-8 h-64 flex flex-col justify-between bg-red-900/20 border-red-900">
-                    <span class="text-red-400 text-sm font-mono">INTERACTIVE</span>
-                    <h3 class="text-2xl font-bold">iOS Style Switch</h3>
+
+            <a href="https://den4ikf3.github.io/AnimatedBlueGameCard/" target="_blank" rel="noopener"
+            class="project-card hidden group !border-blue-500/50 hover:!border-blue-400 hover:shadow-[0_0_30px_rgba(94,94,94,1)] transition-all duration-500" 
+            data-category="game-cards">
+                <div class="relative overflow-hidden h-[800px] bg-zinc-900">
+                    <img src="images/BlueCharacterCard.png" alt="Blue Character" 
+                         class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
+                    <div class="relative z-10 h-full flex flex-col justify-between p-8">
+                        <span class="text-blue-400 text-sm font-mono drop-shadow-[0_0_5px_rgba(94,94,94,1)]">GAME UI</span>
+                        <h3 class="text-3xl font-bold text-white">Blue Character</h3>
+                    </div>
                 </div>
             </a>
-            <a href="#" class="project-card hidden" data-category="toggles">
-                <div class="p-8 h-64 flex flex-col justify-between bg-red-900/20 border-red-900">
-                    <span class="text-red-400 text-sm font-mono">INTERACTIVE</span>
-                    <h3 class="text-2xl font-bold">Dark Mode Slider</h3>
+
+            <a href="https://den4ikf3.github.io/AnimatedYelowGameCard/" target="_blank" rel="noopener"
+            class="project-card hidden group !border-yellow-500/50 hover:!border-yellow-400 hover:shadow-[0_0_30px_rgba(94,94,94,1)] transition-all duration-500" 
+            data-category="game-cards">
+                <div class="relative overflow-hidden h-[800px] bg-zinc-900">
+                    <img src="images/YellowCharacterCard.png" alt="Yellow Character" 
+                         class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
+                    <div class="relative z-10 h-full flex flex-col justify-between p-8">
+                        <span class="text-yellow-400 text-sm font-mono drop-shadow-[0_0_5px_rgba(94,94,94,1)]">GAME UI</span>
+                        <h3 class="text-3xl font-bold text-white">Yellow Character</h3>
+                    </div>
                 </div>
             </a>
-            <a href="#" class="project-card hidden" data-category="toggles">
-                <div class="p-8 h-64 flex flex-col justify-between bg-red-900/20 border-red-900">
-                    <span class="text-red-400 text-sm font-mono">INTERACTIVE</span>
-                    <h3 class="text-2xl font-bold">Liquid Toggle</h3>
+
+            <a href="https://den4ikf3.github.io/AnimatedRedGameCard/" target="_blank" rel="noopener"
+            class="project-card hidden group !border-red-500/50 hover:!border-red-400 hover:shadow-[0_0_30px_rgba(94,94,94,1)] transition-all duration-500" 
+            data-category="game-cards">
+                <div class="relative overflow-hidden h-[800px] bg-zinc-900">
+                    <img src="images/RedCharacterCard.png" alt="Red Character" 
+                         class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
+                    <div class="relative z-10 h-full flex flex-col justify-between p-8">
+                        <span class="text-red-500 text-sm font-mono drop-shadow-[0_0_5px_rgba(94,94,94,1)]">GAME UI</span>
+                        <h3 class="text-3xl font-bold text-white">Red Character</h3>
+                    </div>
+                </div>
+            </a>
+
+            <a href="https://den4ikf3.github.io/AnimatedGreenGameCard/" target="_blank" rel="noopener"
+            class="project-card hidden group !border-green-500/50 hover:!border-green-400 hover:shadow-[0_0_30px_rgba(94,94,94,1)] transition-all duration-500" 
+            data-category="game-cards">
+                <div class="relative overflow-hidden h-[800px] bg-zinc-900">
+                    <img src="images/GreenCharacterCard.png" alt="Green Character" 
+                         class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
+                    <div class="relative z-10 h-full flex flex-col justify-between p-8">
+                        <span class="text-green-400 text-sm font-mono drop-shadow-[0_0_5px_rgba(94,94,94,1)]">GAME UI</span>
+                        <h3 class="text-3xl font-bold text-white">Green Character</h3>
+                    </div>
+                </div>
+            </a>
+
+            <a href="https://den4ikf3.github.io/AnimatedPurpleGameCard/" target="_blank" rel="noopener"
+            class="project-card hidden group !border-purple-500/50 hover:!border-purple-400 hover:shadow-[0_0_30px_rgba(94,94,94,1)] transition-all duration-500" 
+            data-category="game-cards">
+                <div class="relative overflow-hidden h-[800px] bg-zinc-900">
+                    <img src="images/PurpleCharacterCard.png" alt="Purple Character" 
+                         class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
+                    <div class="relative z-10 h-full flex flex-col justify-between p-8">
+                        <span class="text-purple-400 text-sm font-mono drop-shadow-[0_0_5px_rgba(94,94,94,1)]">GAME UI</span>
+                        <h3 class="text-3xl font-bold text-white">Purple Character</h3>
+                    </div>
+                </div>
+            </a>
+
+            <a href="https://den4ikf3.github.io/TransparentCreditCard/" target="_blank" rel="noopener"
+            class="project-card hidden group !border-yellow-500/50 hover:!border-yellow-400 hover:shadow-[0_0_30px_rgba(94,94,94,1)] transition-all duration-500" 
+            data-category="credit-cards">
+                <div class="relative overflow-hidden p-8 h-[450px] bg-zinc-900">
+                    <img src="images/TransparentCreditCard.png" alt="Transparent Card" 
+                         class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-60">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent"></div>
+                    <div class="relative z-10 h-full flex flex-col justify-between">
+                        <span class="text-yellow-400 text-sm font-mono drop-shadow-[0_0_5px_rgba(94,94,94,1)]">ASSET</span>
+                        <h3 class="text-2xl font-bold text-white">Transparent Card</h3>
+                    </div>
+                </div>
+            </a>
+
+            <a href="https://den4ikf3.github.io/HolographicCreditCard/" target="_blank" rel="noopener"
+            class="project-card hidden group !border-yellow-500/50 hover:!border-yellow-400 hover:shadow-[0_0_30px_rgba(94,94,94,1)] transition-all duration-500" 
+            data-category="credit-cards">
+                <div class="relative overflow-hidden p-8 h-[450px] bg-zinc-900">
+                    <img src="images/3DCreditCard.png" alt="Holographic 3D Card" 
+                         class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-60">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent"></div>
+                    <div class="relative z-10 h-full flex flex-col justify-between">
+                        <span class="text-yellow-400 text-sm font-mono drop-shadow-[0_0_5px_rgba(94,94,94,1)]">3D ASSET</span>
+                        <h3 class="text-2xl font-bold text-white">Holographic 3D Card</h3>
+                    </div>
+                </div>
+            </a>
+
+            <a href="https://den4ikf3.github.io/Day-NightToggle/" target="_blank" rel="noopener"
+            class="project-card hidden group !border-red-500/50 hover:!border-red-400 hover:shadow-[0_0_30px_rgba(94,94,94,1)] transition-all duration-500" 
+            data-category="toggles">
+                <div class="relative overflow-hidden p-8 h-[450px] bg-zinc-900">
+                    <img src="images/DayNightToggle.png" alt="Day-Night Toggle" 
+                         class="absolute inset-0 w-full h-full object-cover opacity-60 transition-transform duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent"></div>
+                    <div class="relative z-10 h-full flex flex-col justify-between">
+                        <span class="text-red-400 text-sm font-mono drop-shadow-[0_0_5px_rgba(94,94,94,1)]">INTERACTIVE</span>
+                        <h3 class="text-2xl font-bold text-white">Day-Night Toggle</h3>
+                    </div>
+                </div>
+            </a>
+
+            <a href="https://den4ikf3.github.io/NeonToggle/" target="_blank" rel="noopener"
+            class="project-card hidden group !border-red-500/50 hover:!border-red-400 hover:shadow-[0_0_30px_rgba(94,94,94,1)] transition-all duration-500" 
+            data-category="toggles">
+                <div class="relative overflow-hidden p-8 h-[450px] bg-zinc-900">
+                    <img src="images/NeonToggle.png" alt="Neon Toggle" 
+                         class="absolute inset-0 w-full h-full object-cover opacity-60 transition-transform duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent"></div>
+                    <div class="relative z-10 h-full flex flex-col justify-between">
+                        <span class="text-red-400 text-sm font-mono drop-shadow-[0_0_5px_rgba(94,94,94,1)]">INTERACTIVE</span>
+                        <h3 class="text-2xl font-bold text-white">Neon Toggle</h3>
+                    </div>
+                </div>
+            </a>
+
+            <a href="https://den4ikf3.github.io/3DToggle/" target="_blank" rel="noopener"
+            class="project-card hidden group !border-red-500/50 hover:!border-red-400 hover:shadow-[0_0_30px_rgba(94,94,94,1)] transition-all duration-500" 
+            data-category="toggles">
+                <div class="relative overflow-hidden p-8 h-[450px] bg-zinc-900">
+                    <img src="images/3DToggle.png" alt="3D Toggle" 
+                         class="absolute inset-0 w-full h-full object-cover opacity-60 transition-transform duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent"></div>
+                    <div class="relative z-10 h-full flex flex-col justify-between">
+                        <span class="text-red-400 text-sm font-mono drop-shadow-[0_0_5px_rgba(94,94,94,1)]">INTERACTIVE</span>
+                        <h3 class="text-2xl font-bold text-white">3D Toggle</h3>
+                    </div>
+                </div>
+            </a>
+
+            <a href="https://den4ikf3.github.io/ToothToggle/" target="_blank" rel="noopener"
+            class="project-card hidden group !border-red-500/50 hover:!border-red-400 hover:shadow-[0_0_30px_rgba(94,94,94,1)] transition-all duration-500" 
+            data-category="toggles">
+                <div class="relative overflow-hidden p-8 h-[450px] bg-zinc-900">
+                    <img src="images/ToothToggle.png" alt="Tooth Toggle" 
+                         class="absolute inset-0 w-full h-full object-cover opacity-60 transition-transform duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent"></div>
+                    <div class="relative z-10 h-full flex flex-col justify-between">
+                        <span class="text-red-400 text-sm font-mono drop-shadow-[0_0_5px_rgba(94,94,94,1)]">INTERACTIVE</span>
+                        <h3 class="text-2xl font-bold text-white">Tooth Toggle</h3>
+                    </div>
                 </div>
             </a>
 
@@ -170,7 +287,7 @@
                         <div class="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors"></div>
                     </div>
                     <div class="flex justify-between items-center">
-                        <h3 class="text-2xl font-bold text-white uppercase">Agencify Main</h3>
+                        <h3 class="text-2xl font-bold text-white uppercase">Site of the Future</h3>
                         <span class="tag">WEBSITE</span>
                     </div>
                 </a>
@@ -180,7 +297,7 @@
                         <div class="w-full h-full bg-zinc-900 group-hover:scale-105 transition-transform duration-700"></div>
                     </div>
                     <div class="flex justify-between items-center">
-                        <h3 class="text-xl font-bold text-white uppercase">Construct Firm</h3>
+                        <h3 class="text-xl font-bold text-white uppercase">Dodge Landing Page</h3>
                         <span class="tag">WEBSITE</span>
                     </div>
                 </a>
