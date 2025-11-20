@@ -75,4 +75,39 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
     }
+
+    
+});
+
+// ==============================
+// 5. MODAL LOGIC
+// ==============================
+function openModal(modalId) {
+    const modal = document.getElementById(modalId);
+    if (modal) {
+        modal.classList.remove('hidden');
+        modal.classList.add('flex'); // Щоб центрувати вміст
+        document.body.style.overflow = 'hidden'; // Блокуємо скрол сайту
+    }
+}
+
+function closeModal(modalId) {
+    const modal = document.getElementById(modalId);
+    if (modal) {
+        modal.classList.add('hidden');
+        modal.classList.remove('flex');
+        document.body.style.overflow = ''; // Повертаємо скрол сайту
+    }
+}
+
+// Закриття по клавіші ESC
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+        const modals = document.querySelectorAll('[id^="modal-"]');
+        modals.forEach(modal => {
+            if (!modal.classList.contains('hidden')) {
+                closeModal(modal.id);
+            }
+        });
+    }
 });
