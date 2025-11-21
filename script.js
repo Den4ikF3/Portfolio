@@ -1,9 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     console.log("Portfolio loaded!");
 
-    // ==============================
-    // 1. TABS & FILTERS
-    // ==============================
     const tabs = document.querySelectorAll('.tab-btn');
     const cards = document.querySelectorAll('.project-card');
 
@@ -29,9 +26,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // ==============================
-    // 2. CURSOR LOGIC
-    // ==============================
     const cursor = document.getElementById('cursor');
     const projectImages = document.querySelectorAll('.image-container');
 
@@ -47,14 +41,10 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // ==============================
-    // 3. FAQ & Education
-    // ==============================
     const allDetails = document.querySelectorAll("details");
 
     allDetails.forEach((targetDetail) => {
         targetDetail.addEventListener("click", () => {
-            // Закриваємо всі інші, крім поточного
             allDetails.forEach((detail) => {
                 if (detail !== targetDetail) {
                     detail.removeAttribute("open");
@@ -63,9 +53,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // ==============================
-    // 4. BACK TO TOP BUTTON
-    // ==============================
     const backToTopBtn = document.getElementById('backToTop');
     if(backToTopBtn) {
         backToTopBtn.addEventListener('click', () => {
@@ -79,15 +66,12 @@ document.addEventListener('DOMContentLoaded', () => {
     
 });
 
-// ==============================
-// 5. MODAL LOGIC
-// ==============================
 function openModal(modalId) {
     const modal = document.getElementById(modalId);
     if (modal) {
         modal.classList.remove('hidden');
-        modal.classList.add('flex'); // Щоб центрувати вміст
-        document.body.style.overflow = 'hidden'; // Блокуємо скрол сайту
+        modal.classList.add('flex');
+        document.body.style.overflow = 'hidden';
     }
 }
 
@@ -96,11 +80,10 @@ function closeModal(modalId) {
     if (modal) {
         modal.classList.add('hidden');
         modal.classList.remove('flex');
-        document.body.style.overflow = ''; // Повертаємо скрол сайту
+        document.body.style.overflow = '';
     }
 }
 
-// Закриття по клавіші ESC
 document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') {
         const modals = document.querySelectorAll('[id^="modal-"]');
