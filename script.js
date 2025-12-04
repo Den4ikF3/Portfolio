@@ -66,6 +66,33 @@ document.addEventListener('DOMContentLoaded', () => {
     
 });
 
+function switchLang(lang) {
+    const enContent = document.getElementById('cv-en');
+    const uaContent = document.getElementById('cv-ua');
+    const btnEn = document.getElementById('btn-en');
+    const btnUa = document.getElementById('btn-ua');
+
+    if (lang === 'en') {
+        enContent.classList.remove('hidden');
+        uaContent.classList.add('hidden');
+        
+        btnEn.classList.add('bg-white', 'text-black');
+        btnEn.classList.remove('text-gray-500');
+        
+        btnUa.classList.remove('bg-white', 'text-black');
+        btnUa.classList.add('text-gray-500');
+    } else {
+        enContent.classList.add('hidden');
+        uaContent.classList.remove('hidden');
+        
+        btnUa.classList.add('bg-white', 'text-black');
+        btnUa.classList.remove('text-gray-500');
+        
+        btnEn.classList.remove('bg-white', 'text-black');
+        btnEn.classList.add('text-gray-500');
+    }
+}
+
 function openModal(modalId) {
     const modal = document.getElementById(modalId);
     if (modal) {
